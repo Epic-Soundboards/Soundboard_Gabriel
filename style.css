@@ -1,0 +1,63 @@
+/* Grunddesign der Seite */
+body {
+    background-color: #121212; /* Dunkler Hintergrund */
+    color: #ffffff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+}
+
+header {
+    margin-bottom: 40px;
+}
+
+h1 {
+    color: #00ffcc; /* Neon-Türkise Überschrift */
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Das Raster für die Buttons (passt sich automatisch ans Handy an) */
+.sound-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Design der einzelnen Buttons */
+.sound-btn {
+    background-color: #1e1e1e;
+    border: 3px solid #00ffcc;
+    border-radius: 16px;
+    padding: 15px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* Bilder auf den Buttons */
+.sound-btn img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 12px;
+    background-color: #ffffff; /* Falls ein Bild transparente Stellen hat */
+}
+
+/* Hover-Effekt: Wenn die Maus über den Button fährt */
+.sound-btn:hover {
+    background-color: #00ffcc;
+    color: #121212;
+    transform: translateY(-5px) scale(1.03);
+    box-shadow: 0 8px 15px rgba(0, 255, 204, 0.4);
+}
